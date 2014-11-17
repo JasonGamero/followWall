@@ -32,7 +32,7 @@ public class RobotController {
 			new DriveForward(this, leftMotor, rightMotor),
 			new AvoidWall(this, sensorThread, leftMotor, rightMotor),
 			new ParallelWall(this, sensorThread, leftMotor, rightMotor),
-			new CornerWall(this, sensorThread, leftMotor, rightMotor),
+			//new CornerWall(this, sensorThread, leftMotor, rightMotor),
 			new QuitBehavior(), control
 		};
 		
