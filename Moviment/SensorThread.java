@@ -16,6 +16,8 @@ public class SensorThread extends Thread {
 	EV3UltrasonicSensor sonar2 = new EV3UltrasonicSensor(SensorPort.S2);
 	float[] sonarDistance2 = new float[1];
 	
+	
+	
 	public void run() {
 		
 		while (true) {
@@ -58,5 +60,10 @@ public class SensorThread extends Thread {
 	
 	public boolean isTouched2() {
 		return touchActivated2;
+	}
+	
+	public void message(){
+		System.out.println("Control: Distance1: " + sonarDistance1[0]+"  Distance2: " + sonarDistance2[0]+
+					" touch "+touchActivated1);
 	}
 }
